@@ -1,0 +1,285 @@
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2026,
+            "display_year": "2026 Wolverhampton",
+            "summary": "Put election description here. You can use html tags here too.",
+            "site_description": "",
+            "image_url": "https://files.catbox.moe/w30i48.png",
+            "winning_electoral_vote_number": 11,
+            "advisor_url": "123",
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n</ul>",
+            "recommended_reading_enabled": true,
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+];
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2026,
+        "is_premium": 0,
+        "display_year": "2026 Wolverhampton"
+    }
+];
+
+RecReading = true;
+
+campaignTrail_temp.credits = "ElectoralUK";
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+];
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 300,
+        "fields": {
+            "first_name": "Simon",
+            "last_name": "Simkins",
+            "election": 20,
+            "party": "Labour",
+            "state": "Wolverhampton Council",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#e4003b",
+            "secondary_color_hex": "#ff668c",
+            "is_active": 1,
+            "image_url": "https://files.catbox.moe/lphv2j.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1002,
+        "fields": {
+            "first_name": "Anita",
+            "last_name": "Stanley",
+            "election": 20,
+            "party": "Reform UK",
+            "state": "Wolverhampton Council",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://files.catbox.moe/ubs6vc.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "Description as running mate...",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 301,
+        "fields": {
+            "first_name": "Celia",
+            "last_name": "Hibbert",
+            "election": 20,
+            "party": "Reform UK",
+            "state": "Wolverhampton Council",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#12b6cf",
+            "secondary_color_hex": "#46b9c8",
+            "is_active": 1,
+            "image_url": "https://files.catbox.moe/m9xo5r.png",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 302,
+        "fields": {
+            "first_name": "Simon",
+            "last_name": "Bennett",
+            "election": 20,
+            "party": "Conservatives",
+            "state": "State",
+            "priority": 1,
+            "description": "Candidate description here.",
+            "color_hex": "#0087dc",
+            "secondary_color_hex": "#5bb7f1",
+            "is_active": 1,
+            "image_url": "https://files.catbox.moe/rrhiup.png",
+            "electoral_victory_message": "Winner!",
+            "electoral_loss_message": "Loser!",
+            "no_electoral_majority_message": "Majority?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    }
+];
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 305,
+        "fields": {
+            "candidate": 301,
+            "running_mate": 1002
+        }
+    }
+];
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            300,
+            301,
+            302
+        ]
+    }
+];
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            300,
+            301,
+            302
+        ]
+    }
+];
+
+campaignTrail_temp.modBoxTheme = {
+    "header_color": "#000000",
+    "header_text_color": "#ffffff",
+    "description_background_color": "#ffffff",
+    "description_text_color": "#111827",
+    "main_color": "#292929",
+    "secondary_color": "#2563eb",
+    "ui_text_color": "#ffffff"
+};
+
+jet_data = {
+    "headerColor": "#a62b44",
+    "headerTextColor": "#ffffff",
+    "windowColor": "#363636",
+    "containerColor": "#1c1c1c",
+    "innerWindowColor": "#000000",
+    "innerWindowTextColor": "#ffffff",
+    "descriptionWindowColor": "#000000",
+    "descriptionWindowTextColor": "#ffffff",
+    "startButtonColor": "#f8f8f8",
+    "bannerImageUrl": "https://files.catbox.moe/1cqg35.png",
+    "backgroundImageUrl": "https://files.catbox.moe/cwmw0m.png",
+    "gameTitle": "THE CAMPAIGN TRAIL",
+    "customQuote": "",
+    "quoteTextColor": "#ffffff",
+    "endingTextColor": "#ffffff",
+    "modBoxTheme": {
+        "header_color": "#000000",
+        "header_text_color": "#ffffff",
+        "header_image_url": "",
+        "header_text_shadow": "",
+        "header_font": "",
+        "header_margin": "",
+        "description_background_color": "#ffffff",
+        "description_text_color": "#111827",
+        "main_color": "#292929",
+        "secondary_color": "#2563eb",
+        "secondary_hover_color": "",
+        "scrollbar_color": "",
+        "scrollbar_width": "",
+        "image_border": "",
+        "election_image_display": "",
+        "ui_text_color": "#ffffff"
+    }
+};
+
+//#startcode
+function applyTheme(theme) {
+    const gameHeader = document.querySelector(".game_header");
+    if (gameHeader && theme.coloring_title) {
+        gameHeader.style.backgroundColor = theme.coloring_title;
+    }
+
+    const gameWindow = document.getElementById("game_window");
+    if (gameWindow && theme.coloring_window) {
+        gameWindow.style.backgroundColor = theme.coloring_window;
+    }
+
+    const container = document.querySelector(".container");
+    if (container && theme.coloring_container) {
+        container.style.backgroundColor = theme.coloring_container;
+    }
+
+    const headerImg = document.getElementById("header");
+    if (headerImg && theme.header_image) {
+        headerImg.src = theme.header_image;
+    }
+
+    if (theme.body_background) {
+        document.body.style.backgroundImage = `url("${theme.body_background}")`;
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundAttachment = "fixed";
+    }
+
+    const style = document.createElement("style");
+    style.textContent = `
+      #results_container { color: #ffffff; }
+      #wittyquote { color: #ffffff; }
+      .game_header h2 { color: #ffffff; }
+      .inner_window_w_desc { background-color: #000000 !important; color: #ffffff; }
+      .inner_window_front, .person_description_window, .election_description_window, .description_window_small { background-color: #000000 !important; color: #ffffff; }
+      .campaign_trail_start_emphasis { background-color: #f8f8f8 !important; }
+    `;
+    document.head.appendChild(style);
+}
+
+
+
+const theme = nct_stuff.themes[nct_stuff.selectedTheme];
+
+// define / override theme values
+theme.coloring_title     = "#a62b44";
+theme.coloring_window    = "#363636";
+theme.coloring_container = "#1c1c1c";
+theme.header_image = "https://files.catbox.moe/1cqg35.png";
+theme.body_background = "https://files.catbox.moe/cwmw0m.png";
+
+applyTheme(theme);
+//#endcode
